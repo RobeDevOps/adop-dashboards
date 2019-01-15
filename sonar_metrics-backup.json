@@ -4,8 +4,8 @@
     {
       "id": "bb281800-15bd-11e9-b043-0fe83a4d94bb",
       "type": "visualization",
-      "updated_at": "2019-01-14T20:01:48.700Z",
-      "version": 2,
+      "updated_at": "2019-01-11T16:28:36.882Z",
+      "version": 3,
       "attributes": {
         "title": "SQ-Lines-Of-Code",
         "visState": "{\"title\":\"SQ-Lines-Of-Code\",\"type\":\"metric\",\"params\":{\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\",\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"labels\":{\"show\":true},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":60}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"top_hits\",\"schema\":\"metric\",\"params\":{\"field\":\"ncloc\",\"aggregate\":\"concat\",\"size\":1,\"sortField\":\"@timestamp\",\"sortOrder\":\"desc\",\"customLabel\":\"Lines Of Code\"}}]}",
@@ -20,8 +20,8 @@
     {
       "id": "89a5c4b0-15bf-11e9-b043-0fe83a4d94bb",
       "type": "visualization",
-      "updated_at": "2019-01-14T20:01:48.700Z",
-      "version": 2,
+      "updated_at": "2019-01-11T16:40:00.379Z",
+      "version": 1,
       "attributes": {
         "title": "SQ-Technical-Debts",
         "visState": "{\"title\":\"SQ-Technical-Debts\",\"type\":\"metric\",\"params\":{\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\",\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"labels\":{\"show\":true},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":60}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"top_hits\",\"schema\":\"metric\",\"params\":{\"field\":\"sqale_index\",\"aggregate\":\"concat\",\"size\":1,\"sortField\":\"@timestamp\",\"sortOrder\":\"desc\",\"customLabel\":\"Technical Debts (minutes)\"}}]}",
@@ -36,8 +36,8 @@
     {
       "id": "d94b2c30-15bf-11e9-b043-0fe83a4d94bb",
       "type": "visualization",
-      "updated_at": "2019-01-14T20:01:48.700Z",
-      "version": 2,
+      "updated_at": "2019-01-11T16:42:14.003Z",
+      "version": 1,
       "attributes": {
         "title": "SQ-Violations",
         "visState": "{\"title\":\"SQ-Violations\",\"type\":\"metric\",\"params\":{\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\",\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"labels\":{\"show\":true},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":60}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"top_hits\",\"schema\":\"metric\",\"params\":{\"field\":\"violation_major\",\"aggregate\":\"concat\",\"size\":1,\"sortField\":\"@timestamp\",\"sortOrder\":\"desc\",\"customLabel\":\"Major Violation\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"top_hits\",\"schema\":\"metric\",\"params\":{\"field\":\"violation_blocker\",\"aggregate\":\"concat\",\"size\":1,\"sortField\":\"@timestamp\",\"sortOrder\":\"desc\",\"customLabel\":\"Blocker Violation\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"top_hits\",\"schema\":\"metric\",\"params\":{\"field\":\"violation_critical\",\"aggregate\":\"concat\",\"size\":1,\"sortField\":\"@timestamp\",\"sortOrder\":\"desc\",\"customLabel\":\"Critical Violation\"}}]}",
@@ -50,25 +50,9 @@
       }
     },
     {
-      "id": "25b57df0-18d6-11e9-b6b2-2377e366a3af",
-      "type": "visualization",
-      "updated_at": "2019-01-15T14:59:24.623Z",
-      "version": 1,
-      "attributes": {
-        "title": "SQ-Coverage",
-        "visState": "{\"title\":\"SQ-Coverage\",\"type\":\"goal\",\"params\":{\"addTooltip\":true,\"addLegend\":false,\"isDisplayWarning\":false,\"type\":\"gauge\",\"gauge\":{\"verticalSplit\":false,\"autoExtend\":false,\"percentageMode\":true,\"gaugeType\":\"Arc\",\"gaugeStyle\":\"Full\",\"backStyle\":\"Full\",\"orientation\":\"vertical\",\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"gaugeColorMode\":\"None\",\"colorsRange\":[{\"from\":0,\"to\":100}],\"invertColors\":false,\"labels\":{\"show\":true,\"color\":\"black\"},\"scale\":{\"show\":false,\"labels\":false,\"color\":\"#333\",\"width\":2},\"type\":\"meter\",\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":60}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"top_hits\",\"schema\":\"metric\",\"params\":{\"field\":\"coverage\",\"aggregate\":\"average\",\"size\":1,\"sortField\":\"@timestamp\",\"sortOrder\":\"desc\",\"customLabel\":\"Coverage\"}}]}",
-        "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"}}}",
-        "description": "",
-        "version": 1,
-        "kibanaSavedObjectMeta": {
-          "searchSourceJSON": "{\"index\":\"ba550d60-15b9-11e9-b043-0fe83a4d94bb\",\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
-        }
-      }
-    },
-    {
       "id": "ba550d60-15b9-11e9-b043-0fe83a4d94bb",
       "type": "index-pattern",
-      "updated_at": "2019-01-14T20:01:48.700Z",
+      "updated_at": "2019-01-11T15:58:33.762Z",
       "version": 2,
       "attributes": {
         "title": "adop_sonar_*",
@@ -79,13 +63,13 @@
     {
       "id": "c70c38e0-15bd-11e9-b043-0fe83a4d94bb",
       "type": "dashboard",
-      "updated_at": "2019-01-15T15:02:57.382Z",
-      "version": 3,
+      "updated_at": "2019-01-11T16:46:07.325Z",
+      "version": 6,
       "attributes": {
         "title": "Code Quality",
         "hits": 0,
         "description": "",
-        "panelsJSON": "[{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":0,\"w\":20,\"h\":8,\"i\":\"1\"},\"id\":\"bb281800-15bd-11e9-b043-0fe83a4d94bb\",\"panelIndex\":\"1\",\"type\":\"visualization\",\"version\":\"6.4.3\"},{\"gridData\":{\"x\":0,\"y\":8,\"w\":20,\"h\":7,\"i\":\"2\"},\"version\":\"6.4.3\",\"panelIndex\":\"2\",\"type\":\"visualization\",\"id\":\"89a5c4b0-15bf-11e9-b043-0fe83a4d94bb\",\"embeddableConfig\":{}},{\"gridData\":{\"x\":0,\"y\":15,\"w\":48,\"h\":7,\"i\":\"3\"},\"version\":\"6.4.3\",\"panelIndex\":\"3\",\"type\":\"visualization\",\"id\":\"d94b2c30-15bf-11e9-b043-0fe83a4d94bb\",\"embeddableConfig\":{}},{\"gridData\":{\"x\":20,\"y\":0,\"w\":28,\"h\":15,\"i\":\"4\"},\"version\":\"6.4.3\",\"panelIndex\":\"4\",\"type\":\"visualization\",\"id\":\"25b57df0-18d6-11e9-b6b2-2377e366a3af\",\"embeddableConfig\":{}}]",
+        "panelsJSON": "[{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":0,\"w\":24,\"h\":8,\"i\":\"1\"},\"id\":\"bb281800-15bd-11e9-b043-0fe83a4d94bb\",\"panelIndex\":\"1\",\"type\":\"visualization\",\"version\":\"6.4.3\"},{\"gridData\":{\"x\":24,\"y\":0,\"w\":23,\"h\":8,\"i\":\"2\"},\"version\":\"6.4.3\",\"panelIndex\":\"2\",\"type\":\"visualization\",\"id\":\"89a5c4b0-15bf-11e9-b043-0fe83a4d94bb\",\"embeddableConfig\":{}},{\"gridData\":{\"x\":0,\"y\":8,\"w\":48,\"h\":7,\"i\":\"3\"},\"version\":\"6.4.3\",\"panelIndex\":\"3\",\"type\":\"visualization\",\"id\":\"d94b2c30-15bf-11e9-b043-0fe83a4d94bb\",\"embeddableConfig\":{}}]",
         "optionsJSON": "{\"darkTheme\":true,\"hidePanelTitles\":false,\"useMargins\":true}",
         "version": 1,
         "timeRestore": false,
